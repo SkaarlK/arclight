@@ -20,7 +20,7 @@ settings:
   player-shuffle: 0
   timeout-time: 60
   restart-on-crash: true
-  restart-script: ./start.sh
+  restart-script: ./run.sh
   sample-count: 12
   netty-threads: 4
   user-cache-size: 1000
@@ -141,3 +141,5 @@ world-settings:
       raiders: 48
       misc: 16
       tick-inactive-villagers: true
+  worldeditregentempworld:
+    verbose: false

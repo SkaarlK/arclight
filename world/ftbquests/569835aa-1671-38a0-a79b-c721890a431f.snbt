@@ -1,0 +1,13 @@
+{
+	version: 1
+	uuid: "569835aa167138a0a79bc721890a431f"
+	name: "SkaarlK_"
+	can_edit: false
+	lock: false
+	auto_pin: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	claimed_rewards: { }
+	pinned_quests: [ ]
+}

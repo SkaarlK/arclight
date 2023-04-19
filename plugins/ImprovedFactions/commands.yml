@@ -1,0 +1,182 @@
+commands:
+  tip:
+    costs: 0
+    aliases: []
+  power:
+    costs: 0
+    aliases: []
+  map:
+    costs: 0
+    aliases: []
+  unclaim:
+    costs: 0
+    aliases: []
+  inviteaccept:
+    costs: 0
+    aliases: []
+  invite:
+    costs: 0
+    aliases: []
+  members:
+    costs: 0
+    aliases: []
+  join:
+    costs: 0
+    aliases: []
+  online:
+    costs: 0
+    aliases: []
+  kick:
+    costs: 0
+    aliases: []
+  unban:
+    costs: 0
+    aliases: []
+  ban:
+    costs: 0
+    aliases: []
+  who:
+    costs: 0
+    aliases: []
+  leave:
+    costs: 0
+    aliases: []
+  extension:
+    download:
+      aliases: []
+      costs: 0
+    costs: 0
+    aliases: []
+  relation:
+    ally:
+      aliases: []
+      costs: 0
+    war:
+      aliases: []
+      costs: 0
+    neutral:
+      aliases: []
+      costs: 0
+    allyaccept:
+      aliases: []
+      costs: 0
+    costs: 0
+    aliases: []
+  settings:
+    aliases: []
+    costs: 0
+  user-settings:
+    aliases: []
+    costs: 0
+  claim:
+    costs: 0
+    aliases: []
+  admin:
+    reset:
+      aliases: []
+      costs: 0
+    disband:
+      aliases: []
+      costs: 0
+    playerfaction:
+      aliases: []
+      costs: 0
+    isinfaction:
+      aliases: []
+      costs: 0
+    regenerate:
+      aliases: []
+      costs: 0
+    permanent:
+      aliases: []
+      costs: 0
+    freeze:
+      aliases: []
+      costs: 0
+    joinprivate:
+      aliases: []
+      costs: 0
+    timeout:
+      aliases: []
+      costs: 0
+    deltimeout:
+      aliases: []
+      costs: 0
+    bypass:
+      aliases: []
+      costs: 0
+    power:
+      aliases: []
+      costs: 0
+      add:
+        aliases: []
+        costs: 0
+      remove:
+        aliases: []
+        costs: 0
+      set:
+        aliases: []
+        costs: 0
+    maxpower:
+      aliases: []
+      costs: 0
+      add:
+        aliases: []
+        costs: 0
+      remove:
+        aliases: []
+        costs: 0
+      set:
+        aliases: []
+        costs: 0
+    migrate:
+      aliases: []
+      costs: 0
+    costs: 0
+    aliases: []
+  help:
+    costs: 0
+    aliases: []
+  zones:
+    safezone:
+      aliases: []
+      costs: 0
+    unclaim:
+      aliases: []
+      costs: 0
+    warzone:
+      aliases: []
+      costs: 0
+    unclaimable:
+      aliases: []
+      costs: 0
+    costs: 0
+    aliases: []
+  delete:
+    costs: 0
+    aliases: []
+  create:
+    costs: 0
+    aliases: []
+  plugin:
+    disable:
+      aliases: []
+      costs: 0
+    standby:
+      aliases: []
+      costs: 0
+    costs: 0
+    aliases: []
+  config:
+    save:
+      aliases: []
+      costs: 0
+    reload:
+      aliases: []
+      costs: 0
+    removeBackups:
+      aliases: []
+      costs: 0
+    costs: 0
+    aliases: []
+version: 1.5.1

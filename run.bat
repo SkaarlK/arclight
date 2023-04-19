@@ -1,1 +1,1 @@
-java -jar arclight-forge-1.16.5-1.0.24.jar nogui
+"C:\Program Files\Java\jre1.8.0_361\bin\java.exe" -jar -Xmx10G -Xms4G C:\Users\kevin\Downloads\arclight\arclight-forge-1.16.5-1.0.24.jar nogui

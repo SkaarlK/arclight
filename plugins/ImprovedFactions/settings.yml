@@ -1,0 +1,56 @@
+version: 1.5.1
+settings:
+  openType:
+    isLocked: false
+  change?rename:
+    isLocked: false
+  change?motd:
+    isLocked: false
+  change?tag:
+    isLocked: false
+  universal_color:
+    isLocked: false
+  open?members:
+    isLocked: false
+  open?online:
+    isLocked: false
+  open?ranks:
+    isLocked: false
+  bossBars:
+    isLocked: false
+    defaulted: true
+  hideCommandDescription:
+    isLocked: false
+    defaulted: false
+  displayTitle:
+    isLocked: false
+    defaulted: true
+  titlePosition:
+    isLocked: false
+  showNotifications:
+    isLocked: false
+    defaulted: true
+  showTips:
+    isLocked: false
+    defaulted: true
+  factionJoinTimeout:
+    isLocked: false
+  permission:
+    broadcast-receive:
+      isLocked: false
+    place:
+      isLocked: false
+    break:
+      isLocked: false
+    interact:
+      isLocked: false
+    mount:
+      isLocked: false
+    settings:
+      isLocked: false
+    manage-rank:
+      isLocked: false
+    kick:
+      isLocked: false
+    ban:
+      isLocked: false

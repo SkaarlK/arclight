@@ -1,0 +1,26 @@
+{
+  "name" : "SkaarlK_",
+  "playerSetting" : {
+    "displayTitle" : {
+      "selected" : true
+    },
+    "hideCommandDescription" : {
+      "selected" : false
+    },
+    "titlePosition" : {
+      "selected" : 0
+    },
+    "bossBars" : {
+      "selected" : true
+    },
+    "factionJoinTimeout" : {
+      "selected" : "-1"
+    },
+    "showTips" : {
+      "selected" : true
+    },
+    "showNotifications" : {
+      "selected" : true
+    }
+  }
+}
