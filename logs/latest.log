@@ -10666,3 +10666,290 @@ java.nio.file.NoSuchFileException: ./world/./tesseract/tracking
 [09May2023 20:06:39.436] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: SkaarlK_ lost connection: Disconnected
 [09May2023 20:06:39.443] [Server thread/INFO] [voicechat/]: Disconnecting client SkaarlK_
 [09May2023 20:06:39.645] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: SkaarlK_ left the game
+[09May2023 20:30:53.884] [Server console handler/ERROR] [net.minecraft.server.dedicated.DedicatedServer/]: Caught previously unhandled exception :
+java.io.IOError: java.io.IOException: Input/output error
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:143) ~[jline-3.12.1.jar:?]
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110) ~[jline-3.12.1.jar:?]
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61) ~[jline-3.12.1.jar:?]
+	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:848) ~[jline-3.12.1.jar:?]
+	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:868) ~[jline-3.12.1.jar:?]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:575) ~[jline-3.12.1.jar:?]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:418) ~[jline-3.12.1.jar:?]
+	at net.minecraftforge.server.console.TerminalHandler.handleCommands(TerminalHandler.java:46) ~[forge:?]
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:84) ~[?:?]
+Caused by: java.io.IOException: Input/output error
+	at java.io.FileInputStream.read0(Native Method) ~[?:?]
+	at java.io.FileInputStream.read(FileInputStream.java:228) ~[?:?]
+	at org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73) ~[jline-3.12.1.jar:?]
+	at org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62) ~[jline-3.12.1.jar:?]
+	at org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168) ~[jline-3.12.1.jar:?]
+	at org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57) ~[jline-3.12.1.jar:?]
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:133) ~[jline-3.12.1.jar:?]
+	... 8 more
+[09May2023 20:30:53.931] [Server thread/INFO] [com.sk89q.worldedit.extension.platform.PlatformManager/]: Unregistering com.sk89q.worldedit.forge.ForgePlatform from WorldEdit
+[09May2023 20:30:53.992] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[09May2023 20:30:53.992] [Server thread/INFO] [EssentialsChat/]: Disabling EssentialsChat v2.19.7
+[09May2023 20:30:53.998] [Server thread/INFO] [EssentialsSpawn/]: Disabling EssentialsSpawn v2.19.7
+[09May2023 20:30:54.001] [Server thread/INFO] [Essentials/]: Disabling Essentials v2.19.7
+[09May2023 20:30:54.001] [Server thread/INFO] [Vault/]: [Economy] Essentials Economy unhooked.
+[09May2023 20:30:54.006] [Server thread/INFO] [ImprovedFactions/]: Disabling ImprovedFactions v1.6.2
+[09May2023 20:30:54.012] [Server thread/WARN] [Minecraft/]: [ImprovedFactions] Couldn't save file compact_world.json to /mnt/d/Backup/PROJECTS/arclight/plugins/ImprovedFactions/Data/Chunks/world/compactmachines/compact_world.json, because of plugins/ImprovedFactions/Data/Chunks/world/compactmachines/compact_world.json (No such file or directory)
+[09May2023 20:30:54.012] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: java.io.FileNotFoundException: plugins/ImprovedFactions/Data/Chunks/world/compactmachines/compact_world.json (No such file or directory)
+[09May2023 20:30:54.013] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09May2023 20:30:54.013] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+[09May2023 20:30:54.013] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+[09May2023 20:30:54.014] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+[09May2023 20:30:54.014] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.core.JsonFactory.createGenerator(JsonFactory.java:1339)
+[09May2023 20:30:54.015] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.createGenerator(ObjectWriter.java:717)
+[09May2023 20:30:54.015] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1027)
+[09May2023 20:30:54.015] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.jackson.JsonUtility.saveObject(JsonUtility.java:34)
+[09May2023 20:30:54.016] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.data.DataAccess.write(DataAccess.java:152)
+[09May2023 20:30:54.016] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.claim.ClaimManager.Disable(ClaimManager.java:126)
+[09May2023 20:30:54.017] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.dynamic.loaders.DynamicLoader.disable(DynamicLoader.java:20)
+[09May2023 20:30:54.017] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.lambda$onDisable$4(MainIF.java:236)
+[09May2023 20:30:54.017] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.callbacks.ExceptionCallback.run(ExceptionCallback.java:8)
+[09May2023 20:30:54.018] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.Utility.run(Utility.java:193)
+[09May2023 20:30:54.018] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.onDisable(MainIF.java:227)
+[09May2023 20:30:54.018] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPluginMixin.java:265)
+[09May2023 20:30:54.019] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoaderMixin.java:367)
+[09May2023 20:30:54.019] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:501)
+[09May2023 20:30:54.020] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:493)
+[09May2023 20:30:54.020] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.disablePlugins(CraftServerMixin.java:426)
+[09May2023 20:30:54.020] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.handler$bgo000$arclight$unloadPlugins(MinecraftServerMixin.java:1988)
+[09May2023 20:30:54.021] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_71260_j(MinecraftServerMixin.java:549)
+[09May2023 20:30:54.021] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.dedicated.DedicatedServer.func_71260_j(DedicatedServerMixin.java:514)
+[09May2023 20:30:54.022] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServerMixin.java:1959)
+[09May2023 20:30:54.022] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServerMixin.java:232)
+[09May2023 20:30:54.022] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[09May2023 20:30:54.024] [Server thread/WARN] [Minecraft/]: [ImprovedFactions] Couldn't save file forest_type.json to /mnt/d/Backup/PROJECTS/arclight/plugins/ImprovedFactions/Data/Chunks/world/twilightforest/forest_type.json, because of plugins/ImprovedFactions/Data/Chunks/world/twilightforest/forest_type.json (No such file or directory)
+[09May2023 20:30:54.025] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: java.io.FileNotFoundException: plugins/ImprovedFactions/Data/Chunks/world/twilightforest/forest_type.json (No such file or directory)
+[09May2023 20:30:54.025] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09May2023 20:30:54.025] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+[09May2023 20:30:54.026] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+[09May2023 20:30:54.026] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+[09May2023 20:30:54.026] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.core.JsonFactory.createGenerator(JsonFactory.java:1339)
+[09May2023 20:30:54.027] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.createGenerator(ObjectWriter.java:717)
+[09May2023 20:30:54.027] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1027)
+[09May2023 20:30:54.028] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.jackson.JsonUtility.saveObject(JsonUtility.java:34)
+[09May2023 20:30:54.028] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.data.DataAccess.write(DataAccess.java:152)
+[09May2023 20:30:54.029] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.claim.ClaimManager.Disable(ClaimManager.java:126)
+[09May2023 20:30:54.029] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.dynamic.loaders.DynamicLoader.disable(DynamicLoader.java:20)
+[09May2023 20:30:54.029] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.lambda$onDisable$4(MainIF.java:236)
+[09May2023 20:30:54.030] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.callbacks.ExceptionCallback.run(ExceptionCallback.java:8)
+[09May2023 20:30:54.030] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.Utility.run(Utility.java:193)
+[09May2023 20:30:54.030] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.onDisable(MainIF.java:227)
+[09May2023 20:30:54.031] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPluginMixin.java:265)
+[09May2023 20:30:54.031] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoaderMixin.java:367)
+[09May2023 20:30:54.031] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:501)
+[09May2023 20:30:54.032] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:493)
+[09May2023 20:30:54.032] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.disablePlugins(CraftServerMixin.java:426)
+[09May2023 20:30:54.032] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.handler$bgo000$arclight$unloadPlugins(MinecraftServerMixin.java:1988)
+[09May2023 20:30:54.032] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_71260_j(MinecraftServerMixin.java:549)
+[09May2023 20:30:54.033] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.dedicated.DedicatedServer.func_71260_j(DedicatedServerMixin.java:514)
+[09May2023 20:30:54.033] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServerMixin.java:1959)
+[09May2023 20:30:54.033] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServerMixin.java:232)
+[09May2023 20:30:54.034] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[09May2023 20:30:54.038] [Server thread/WARN] [Minecraft/]: [ImprovedFactions] Couldn't save file DIM1.json to /mnt/d/Backup/PROJECTS/arclight/plugins/ImprovedFactions/Data/Chunks/world/DIM1.json, because of plugins/ImprovedFactions/Data/Chunks/world/DIM1.json (No such file or directory)
+[09May2023 20:30:54.039] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: java.io.FileNotFoundException: plugins/ImprovedFactions/Data/Chunks/world/DIM1.json (No such file or directory)
+[09May2023 20:30:54.039] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09May2023 20:30:54.039] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+[09May2023 20:30:54.039] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+[09May2023 20:30:54.040] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+[09May2023 20:30:54.040] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.core.JsonFactory.createGenerator(JsonFactory.java:1339)
+[09May2023 20:30:54.041] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.createGenerator(ObjectWriter.java:717)
+[09May2023 20:30:54.041] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1027)
+[09May2023 20:30:54.041] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.jackson.JsonUtility.saveObject(JsonUtility.java:34)
+[09May2023 20:30:54.041] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.data.DataAccess.write(DataAccess.java:152)
+[09May2023 20:30:54.042] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.claim.ClaimManager.Disable(ClaimManager.java:126)
+[09May2023 20:30:54.042] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.dynamic.loaders.DynamicLoader.disable(DynamicLoader.java:20)
+[09May2023 20:30:54.051] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.lambda$onDisable$4(MainIF.java:236)
+[09May2023 20:30:54.051] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.callbacks.ExceptionCallback.run(ExceptionCallback.java:8)
+[09May2023 20:30:54.051] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.Utility.run(Utility.java:193)
+[09May2023 20:30:54.052] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.onDisable(MainIF.java:227)
+[09May2023 20:30:54.052] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPluginMixin.java:265)
+[09May2023 20:30:54.052] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoaderMixin.java:367)
+[09May2023 20:30:54.052] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:501)
+[09May2023 20:30:54.053] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:493)
+[09May2023 20:30:54.053] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.disablePlugins(CraftServerMixin.java:426)
+[09May2023 20:30:54.053] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.handler$bgo000$arclight$unloadPlugins(MinecraftServerMixin.java:1988)
+[09May2023 20:30:54.054] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_71260_j(MinecraftServerMixin.java:549)
+[09May2023 20:30:54.054] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.dedicated.DedicatedServer.func_71260_j(DedicatedServerMixin.java:514)
+[09May2023 20:30:54.054] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServerMixin.java:1959)
+[09May2023 20:30:54.054] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServerMixin.java:232)
+[09May2023 20:30:54.055] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[09May2023 20:30:54.056] [Server thread/WARN] [Minecraft/]: [ImprovedFactions] Couldn't save file reality_marble.json to /mnt/d/Backup/PROJECTS/arclight/plugins/ImprovedFactions/Data/Chunks/world/mahoutsukai/reality_marble.json, because of plugins/ImprovedFactions/Data/Chunks/world/mahoutsukai/reality_marble.json (No such file or directory)
+[09May2023 20:30:54.056] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: java.io.FileNotFoundException: plugins/ImprovedFactions/Data/Chunks/world/mahoutsukai/reality_marble.json (No such file or directory)
+[09May2023 20:30:54.057] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09May2023 20:30:54.057] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+[09May2023 20:30:54.057] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+[09May2023 20:30:54.057] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+[09May2023 20:30:54.058] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.core.JsonFactory.createGenerator(JsonFactory.java:1339)
+[09May2023 20:30:54.058] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.createGenerator(ObjectWriter.java:717)
+[09May2023 20:30:54.058] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1027)
+[09May2023 20:30:54.059] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.jackson.JsonUtility.saveObject(JsonUtility.java:34)
+[09May2023 20:30:54.059] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.data.DataAccess.write(DataAccess.java:152)
+[09May2023 20:30:54.059] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.claim.ClaimManager.Disable(ClaimManager.java:126)
+[09May2023 20:30:54.059] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.dynamic.loaders.DynamicLoader.disable(DynamicLoader.java:20)
+[09May2023 20:30:54.059] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.lambda$onDisable$4(MainIF.java:236)
+[09May2023 20:30:54.060] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.callbacks.ExceptionCallback.run(ExceptionCallback.java:8)
+[09May2023 20:30:54.060] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.Utility.run(Utility.java:193)
+[09May2023 20:30:54.060] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.onDisable(MainIF.java:227)
+[09May2023 20:30:54.060] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPluginMixin.java:265)
+[09May2023 20:30:54.061] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoaderMixin.java:367)
+[09May2023 20:30:54.061] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:501)
+[09May2023 20:30:54.061] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:493)
+[09May2023 20:30:54.061] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.disablePlugins(CraftServerMixin.java:426)
+[09May2023 20:30:54.062] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.handler$bgo000$arclight$unloadPlugins(MinecraftServerMixin.java:1988)
+[09May2023 20:30:54.062] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_71260_j(MinecraftServerMixin.java:549)
+[09May2023 20:30:54.062] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.dedicated.DedicatedServer.func_71260_j(DedicatedServerMixin.java:514)
+[09May2023 20:30:54.062] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServerMixin.java:1959)
+[09May2023 20:30:54.063] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServerMixin.java:232)
+[09May2023 20:30:54.063] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[09May2023 20:30:54.064] [Server thread/WARN] [Minecraft/]: [ImprovedFactions] Couldn't save file spatial_storage.json to /mnt/d/Backup/PROJECTS/arclight/plugins/ImprovedFactions/Data/Chunks/world/appliedenergistics2/spatial_storage.json, because of plugins/ImprovedFactions/Data/Chunks/world/appliedenergistics2/spatial_storage.json (No such file or directory)
+[09May2023 20:30:54.065] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: java.io.FileNotFoundException: plugins/ImprovedFactions/Data/Chunks/world/appliedenergistics2/spatial_storage.json (No such file or directory)
+[09May2023 20:30:54.065] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09May2023 20:30:54.065] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+[09May2023 20:30:54.065] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+[09May2023 20:30:54.066] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+[09May2023 20:30:54.066] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.core.JsonFactory.createGenerator(JsonFactory.java:1339)
+[09May2023 20:30:54.066] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.createGenerator(ObjectWriter.java:717)
+[09May2023 20:30:54.067] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1027)
+[09May2023 20:30:54.067] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.jackson.JsonUtility.saveObject(JsonUtility.java:34)
+[09May2023 20:30:54.067] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.data.DataAccess.write(DataAccess.java:152)
+[09May2023 20:30:54.067] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.claim.ClaimManager.Disable(ClaimManager.java:126)
+[09May2023 20:30:54.068] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.dynamic.loaders.DynamicLoader.disable(DynamicLoader.java:20)
+[09May2023 20:30:54.068] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.lambda$onDisable$4(MainIF.java:236)
+[09May2023 20:30:54.068] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.callbacks.ExceptionCallback.run(ExceptionCallback.java:8)
+[09May2023 20:30:54.068] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.Utility.run(Utility.java:193)
+[09May2023 20:30:54.069] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.onDisable(MainIF.java:227)
+[09May2023 20:30:54.069] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPluginMixin.java:265)
+[09May2023 20:30:54.069] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoaderMixin.java:367)
+[09May2023 20:30:54.069] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:501)
+[09May2023 20:30:54.070] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:493)
+[09May2023 20:30:54.070] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.disablePlugins(CraftServerMixin.java:426)
+[09May2023 20:30:54.070] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.handler$bgo000$arclight$unloadPlugins(MinecraftServerMixin.java:1988)
+[09May2023 20:30:54.070] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_71260_j(MinecraftServerMixin.java:549)
+[09May2023 20:30:54.071] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.dedicated.DedicatedServer.func_71260_j(DedicatedServerMixin.java:514)
+[09May2023 20:30:54.071] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServerMixin.java:1959)
+[09May2023 20:30:54.071] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServerMixin.java:232)
+[09May2023 20:30:54.071] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[09May2023 20:30:54.073] [Server thread/WARN] [Minecraft/]: [ImprovedFactions] Couldn't save file mining.json to /mnt/d/Backup/PROJECTS/arclight/plugins/ImprovedFactions/Data/Chunks/world/mining_dimension/mining.json, because of plugins/ImprovedFactions/Data/Chunks/world/mining_dimension/mining.json (No such file or directory)
+[09May2023 20:30:54.073] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: java.io.FileNotFoundException: plugins/ImprovedFactions/Data/Chunks/world/mining_dimension/mining.json (No such file or directory)
+[09May2023 20:30:54.073] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09May2023 20:30:54.073] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+[09May2023 20:30:54.074] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+[09May2023 20:30:54.074] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+[09May2023 20:30:54.074] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.core.JsonFactory.createGenerator(JsonFactory.java:1339)
+[09May2023 20:30:54.074] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.createGenerator(ObjectWriter.java:717)
+[09May2023 20:30:54.075] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1027)
+[09May2023 20:30:54.075] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.jackson.JsonUtility.saveObject(JsonUtility.java:34)
+[09May2023 20:30:54.075] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.data.DataAccess.write(DataAccess.java:152)
+[09May2023 20:30:54.075] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.claim.ClaimManager.Disable(ClaimManager.java:126)
+[09May2023 20:30:54.076] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.dynamic.loaders.DynamicLoader.disable(DynamicLoader.java:20)
+[09May2023 20:30:54.076] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.lambda$onDisable$4(MainIF.java:236)
+[09May2023 20:30:54.076] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.callbacks.ExceptionCallback.run(ExceptionCallback.java:8)
+[09May2023 20:30:54.076] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.Utility.run(Utility.java:193)
+[09May2023 20:30:54.077] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.onDisable(MainIF.java:227)
+[09May2023 20:30:54.077] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPluginMixin.java:265)
+[09May2023 20:30:54.077] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoaderMixin.java:367)
+[09May2023 20:30:54.077] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:501)
+[09May2023 20:30:54.078] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:493)
+[09May2023 20:30:54.078] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.disablePlugins(CraftServerMixin.java:426)
+[09May2023 20:30:54.078] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.handler$bgo000$arclight$unloadPlugins(MinecraftServerMixin.java:1988)
+[09May2023 20:30:54.078] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_71260_j(MinecraftServerMixin.java:549)
+[09May2023 20:30:54.079] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.dedicated.DedicatedServer.func_71260_j(DedicatedServerMixin.java:514)
+[09May2023 20:30:54.079] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServerMixin.java:1959)
+[09May2023 20:30:54.079] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServerMixin.java:232)
+[09May2023 20:30:54.079] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[09May2023 20:30:54.080] [Server thread/WARN] [Minecraft/]: [ImprovedFactions] Couldn't save file DIM-1.json to /mnt/d/Backup/PROJECTS/arclight/plugins/ImprovedFactions/Data/Chunks/world/DIM-1.json, because of plugins/ImprovedFactions/Data/Chunks/world/DIM-1.json (No such file or directory)
+[09May2023 20:30:54.081] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: java.io.FileNotFoundException: plugins/ImprovedFactions/Data/Chunks/world/DIM-1.json (No such file or directory)
+[09May2023 20:30:54.081] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09May2023 20:30:54.081] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+[09May2023 20:30:54.081] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+[09May2023 20:30:54.082] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+[09May2023 20:30:54.082] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.core.JsonFactory.createGenerator(JsonFactory.java:1339)
+[09May2023 20:30:54.082] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.createGenerator(ObjectWriter.java:717)
+[09May2023 20:30:54.082] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1027)
+[09May2023 20:30:54.082] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.jackson.JsonUtility.saveObject(JsonUtility.java:34)
+[09May2023 20:30:54.083] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.data.DataAccess.write(DataAccess.java:152)
+[09May2023 20:30:54.083] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.claim.ClaimManager.Disable(ClaimManager.java:126)
+[09May2023 20:30:54.083] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.dynamic.loaders.DynamicLoader.disable(DynamicLoader.java:20)
+[09May2023 20:30:54.083] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.lambda$onDisable$4(MainIF.java:236)
+[09May2023 20:30:54.084] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.callbacks.ExceptionCallback.run(ExceptionCallback.java:8)
+[09May2023 20:30:54.084] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.Utility.run(Utility.java:193)
+[09May2023 20:30:54.084] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.onDisable(MainIF.java:227)
+[09May2023 20:30:54.085] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPluginMixin.java:265)
+[09May2023 20:30:54.085] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoaderMixin.java:367)
+[09May2023 20:30:54.085] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:501)
+[09May2023 20:30:54.085] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:493)
+[09May2023 20:30:54.086] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.disablePlugins(CraftServerMixin.java:426)
+[09May2023 20:30:54.086] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.handler$bgo000$arclight$unloadPlugins(MinecraftServerMixin.java:1988)
+[09May2023 20:30:54.086] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_71260_j(MinecraftServerMixin.java:549)
+[09May2023 20:30:54.086] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.dedicated.DedicatedServer.func_71260_j(DedicatedServerMixin.java:514)
+[09May2023 20:30:54.087] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServerMixin.java:1959)
+[09May2023 20:30:54.087] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServerMixin.java:232)
+[09May2023 20:30:54.087] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[09May2023 20:30:54.089] [Server thread/WARN] [Minecraft/]: [ImprovedFactions] Couldn't save file dungeon.json to /mnt/d/Backup/PROJECTS/arclight/plugins/ImprovedFactions/Data/Chunks/world/bloodmagic/dungeon.json, because of plugins/ImprovedFactions/Data/Chunks/world/bloodmagic/dungeon.json (No such file or directory)
+[09May2023 20:30:54.089] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: java.io.FileNotFoundException: plugins/ImprovedFactions/Data/Chunks/world/bloodmagic/dungeon.json (No such file or directory)
+[09May2023 20:30:54.089] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09May2023 20:30:54.089] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+[09May2023 20:30:54.090] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+[09May2023 20:30:54.090] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+[09May2023 20:30:54.090] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.core.JsonFactory.createGenerator(JsonFactory.java:1339)
+[09May2023 20:30:54.091] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.createGenerator(ObjectWriter.java:717)
+[09May2023 20:30:54.091] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1027)
+[09May2023 20:30:54.091] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.jackson.JsonUtility.saveObject(JsonUtility.java:34)
+[09May2023 20:30:54.091] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.data.DataAccess.write(DataAccess.java:152)
+[09May2023 20:30:54.092] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.claim.ClaimManager.Disable(ClaimManager.java:126)
+[09May2023 20:30:54.092] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.dynamic.loaders.DynamicLoader.disable(DynamicLoader.java:20)
+[09May2023 20:30:54.092] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.lambda$onDisable$4(MainIF.java:236)
+[09May2023 20:30:54.092] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.callbacks.ExceptionCallback.run(ExceptionCallback.java:8)
+[09May2023 20:30:54.093] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.core.utility.Utility.run(Utility.java:193)
+[09May2023 20:30:54.093] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at io.github.toberocat.MainIF.onDisable(MainIF.java:227)
+[09May2023 20:30:54.093] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPluginMixin.java:265)
+[09May2023 20:30:54.093] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoaderMixin.java:367)
+[09May2023 20:30:54.094] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:501)
+[09May2023 20:30:54.094] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:493)
+[09May2023 20:30:54.094] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.disablePlugins(CraftServerMixin.java:426)
+[09May2023 20:30:54.094] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.handler$bgo000$arclight$unloadPlugins(MinecraftServerMixin.java:1988)
+[09May2023 20:30:54.095] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_71260_j(MinecraftServerMixin.java:549)
+[09May2023 20:30:54.095] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.dedicated.DedicatedServer.func_71260_j(DedicatedServerMixin.java:514)
+[09May2023 20:30:54.095] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServerMixin.java:1959)
+[09May2023 20:30:54.095] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServerMixin.java:232)
+[09May2023 20:30:54.095] [Server thread/INFO] [STDERR/]: [io.github.toberocat.core.utility.jackson.JsonUtility:saveObject:39]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[09May2023 20:30:54.103] [Server thread/INFO] [Vault/]: Disabling Vault v1.7.3-b131
+[09May2023 20:30:54.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[09May2023 20:30:54.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[09May2023 20:30:54.106] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[09May2023 20:30:54.285] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[09May2023 20:30:54.365] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world/DIM-1]'/minecraft:the_nether
+[09May2023 20:30:54.370] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09May2023 20:30:54.370] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world/DIM1]'/minecraft:the_end
+[09May2023 20:30:54.376] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09May2023 20:30:54.376] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world/bloodmagic/dungeon]'/bloodmagic:dungeon
+[09May2023 20:30:54.382] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (dungeon): All chunks are saved
+[09May2023 20:30:54.382] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world/compactmachines/compact_world]'/compactmachines:compact_world
+[09May2023 20:30:54.388] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (compact_world): All chunks are saved
+[09May2023 20:30:54.388] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world/mining_dimension/mining]'/mining_dimension:mining
+[09May2023 20:30:54.394] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (mining): All chunks are saved
+[09May2023 20:30:54.395] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world/twilightforest/forest_type]'/twilightforest:twilightforest
+[09May2023 20:30:54.401] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (twilightforest): All chunks are saved
+[09May2023 20:30:54.401] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world/twilightforest/forest_type]'/twilightforest:skylight_forest
+[09May2023 20:30:54.407] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (skylight_forest): All chunks are saved
+[09May2023 20:30:54.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world/mahoutsukai/reality_marble]'/mahoutsukai:reality_marble
+[09May2023 20:30:54.413] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (reality_marble): All chunks are saved
+[09May2023 20:30:54.414] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world/appliedenergistics2/spatial_storage]'/appliedenergistics2:spatial_storage
+[09May2023 20:30:54.421] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (spatial_storage): All chunks are saved
+[09May2023 20:30:54.438] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[09May2023 20:30:54.453] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09May2023 20:30:54.455] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09May2023 20:30:54.457] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (dungeon): All chunks are saved
+[09May2023 20:30:54.459] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (compact_world): All chunks are saved
+[09May2023 20:30:54.460] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (mining): All chunks are saved
+[09May2023 20:30:54.461] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (twilightforest): All chunks are saved
+[09May2023 20:30:54.463] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (skylight_forest): All chunks are saved
+[09May2023 20:30:54.464] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (reality_marble): All chunks are saved
+[09May2023 20:30:54.464] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (spatial_storage): All chunks are saved
+[09May2023 20:30:54.467] [Server thread/INFO] [endertanks/]: Unloading EnderTank Data
+[09May2023 20:30:54.467] [Server thread/INFO] [endertanks/]: Finished Unloading EnderTank Data
+[09May2023 20:30:54.470] [Server thread/INFO] [FluxNetworks/]: FluxNetworkData has been unloaded
