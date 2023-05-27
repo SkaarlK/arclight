@@ -1,1 +1,1 @@
-java -jar -Xmx8G -Xms4G  arclight-forge-1.16.5-1.0.24.jar nogui
+java -jar -Xmx16G -Xms6G  arclight-forge-1.16.5-1.0.24.jar nogui
