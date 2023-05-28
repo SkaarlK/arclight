@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 89.115.172.83
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1685281346560
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1685282284836
+  login: 1685281001173
+money: '0'
+last-account-name: redwolf9912
+lastlocation:
+  world: 88bf0ee3-f88d-4716-93f1-b7ade8c81a99
+  world-name: world
+  x: 440.9592656881344
+  y: 84.0
+  z: 286.41096512466555
+  yaw: -95.73199462890625
+  pitch: 6.899961471557617
+logoutlocation:
+  world: 88bf0ee3-f88d-4716-93f1-b7ade8c81a99
+  world-name: world
+  x: 444.8776253579471
+  y: 84.0
+  z: 288.35893884326157
+  yaw: 355.1709899902344
+  pitch: 6.45061731338501

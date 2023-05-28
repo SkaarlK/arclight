@@ -143,3 +143,5 @@ world-settings:
       tick-inactive-villagers: true
   worldeditregentempworld:
     verbose: false
+  faweregentempworld:
+    verbose: false
